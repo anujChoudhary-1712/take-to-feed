@@ -1,0 +1,58 @@
+{
+  "segments": [
+    {
+      "words": [
+        {
+          "word": " Select",
+          "start": 0.0,
+          "end": 0.4
+        },
+        {
+          "word": " the",
+          "start": 0.4,
+          "end": 0.7
+        },
+        {
+          "word": " exact",
+          "start": 0.7,
+          "end": 1.04
+        },
+        {
+          "word": " range",
+          "start": 1.04,
+          "end": 1.5
+        },
+        {
+          "word": " and",
+          "start": 1.5,
+          "end": 1.92
+        },
+        {
+          "word": " assign",
+          "start": 1.92,
+          "end": 2.26
+        },
+        {
+          "word": " the",
+          "start": 2.26,
+          "end": 2.54
+        },
+        {
+          "word": " edit",
+          "start": 2.54,
+          "end": 2.76
+        },
+        {
+          "word": " to",
+          "start": 2.76,
+          "end": 3.04
+        },
+        {
+          "word": " Leah.",
+          "start": 3.04,
+          "end": 3.3
+        }
+      ]
+    }
+  ]
+}

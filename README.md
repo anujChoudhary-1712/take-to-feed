@@ -45,17 +45,27 @@ social-content/
 
 For a new demo, choose the moment that shows the outcome, draft hooks around it, and use the same evidence in the carousel or reel. Keep links, filenames, and timestamps in the draft so you can check claims while reviewing. Once the post is live, log the result in the experiment folder.
 
-## See a finished example
+## Follow the Signal Desk example
 
-The fictional Signal Desk demo follows a podcast edit note from its original timestamp to assignment and resolution. Start with the [transcript](examples/demo/transcript.md), then inspect the [editable deck](examples/demo/deck.json), [Instagram cover](examples/demo/exports/01.jpg), [LinkedIn PDF](examples/demo/exports/carousel.pdf), and [platform captions](examples/demo/captions.md).
+Start with one fictional product demo and carry its evidence through all four skills.
 
-To reproduce the carousel from a checkout, run the following from the repository root.
+| Step | Input and output |
+| --- | --- |
+| Write the hook | Read the [demo transcript](examples/demo/transcript.md) and compare the three options in the [filled hook sheet](examples/demo/hooks.md). The winning line opens both posts. |
+| Build the carousel | Inspect the [editable deck](examples/demo/deck.json), [contact sheet](examples/demo/exports/contact-sheet.png), [LinkedIn PDF](examples/demo/exports/carousel.pdf), and [platform captions](examples/demo/captions.md). |
+| Edit the reel | Follow the [runnable reel project](examples/demo/reel) with sample media and faster-whisper timings. Compare the [Remotion MP4](examples/demo/reel/reel.mp4) and [HyperFrames MP4](examples/demo/reel/reel-hyperframes.mp4). |
+| Review a cover test | Read the [experiment log](examples/demo/experiment/experiment.md) and [sample analytics](examples/demo/experiment/analytics.csv) to see why a higher rate can still be inconclusive. |
+
+### Rebuild the carousel
+
+Run from the repository root.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python examples/demo/make-fixtures.py
 .venv/bin/python skills/carousel-maker/scripts/render.py examples/demo/deck.json examples/demo/exports
+.venv/bin/python skills/carousel-maker/scripts/check_exports.py examples/demo/deck.json examples/demo/exports
 ```
 
 The [editorial guide](skills/carousel-maker/references/editorial-guide.md) shows how to adapt the slide sequence for a tutorial, case study, or research brief.

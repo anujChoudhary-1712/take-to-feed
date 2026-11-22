@@ -1,0 +1,78 @@
+{
+  "segments": [
+    {
+      "words": [
+        {
+          "word": " Mark",
+          "start": 0.0,
+          "end": 0.28
+        },
+        {
+          "word": " it",
+          "start": 0.28,
+          "end": 0.48
+        },
+        {
+          "word": " resolved",
+          "start": 0.48,
+          "end": 0.9
+        },
+        {
+          "word": " when",
+          "start": 0.9,
+          "end": 1.24
+        },
+        {
+          "word": " the",
+          "start": 1.24,
+          "end": 1.44
+        },
+        {
+          "word": " edit",
+          "start": 1.44,
+          "end": 1.62
+        },
+        {
+          "word": " is",
+          "start": 1.62,
+          "end": 1.86
+        },
+        {
+          "word": " done.",
+          "start": 1.86,
+          "end": 2.24
+        },
+        {
+          "word": " The",
+          "start": 2.64,
+          "end": 2.8
+        },
+        {
+          "word": " timestamp",
+          "start": 2.8,
+          "end": 3.22
+        },
+        {
+          "word": " stays",
+          "start": 3.22,
+          "end": 3.76
+        },
+        {
+          "word": " with",
+          "start": 3.76,
+          "end": 4.06
+        },
+        {
+          "word": " the",
+          "start": 4.06,
+          "end": 4.22
+        },
+        {
+          "word": " note.",
+          "start": 4.22,
+          "end": 4.48
+        }
+      ]
+    }
+  ]
+}

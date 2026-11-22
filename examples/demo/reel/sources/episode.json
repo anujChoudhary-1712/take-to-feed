@@ -1,0 +1,87 @@
+{
+  "segments": [
+    {
+      "words": [
+        {
+          "word": " Give",
+          "start": 0.0,
+          "end": 0.18
+        },
+        {
+          "word": " every",
+          "start": 0.18,
+          "end": 0.56
+        },
+        {
+          "word": " edit",
+          "start": 0.56,
+          "end": 0.86
+        },
+        {
+          "word": " note",
+          "start": 0.86,
+          "end": 1.16
+        },
+        {
+          "word": " a",
+          "start": 1.16,
+          "end": 1.3
+        },
+        {
+          "word": " home.",
+          "start": 1.3,
+          "end": 1.7
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": " Open",
+          "start": 2.14,
+          "end": 2.42
+        },
+        {
+          "word": " the",
+          "start": 2.42,
+          "end": 2.66
+        },
+        {
+          "word": " episode",
+          "start": 2.66,
+          "end": 3.04
+        },
+        {
+          "word": " and",
+          "start": 3.04,
+          "end": 3.48
+        },
+        {
+          "word": " find",
+          "start": 3.48,
+          "end": 3.8
+        },
+        {
+          "word": " the",
+          "start": 3.8,
+          "end": 4.08
+        },
+        {
+          "word": " note",
+          "start": 4.08,
+          "end": 4.34
+        },
+        {
+          "word": " at",
+          "start": 4.34,
+          "end": 4.52
+        },
+        {
+          "word": " 12:40.",
+          "start": 4.52,
+          "end": 5.42
+        }
+      ]
+    }
+  ]
+}

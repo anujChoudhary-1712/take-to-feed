@@ -1,2 +1,5 @@
 .venv/
 __pycache__/
+node_modules/
+/examples/demo/reel/.hyperframes/
+/examples/demo/reel/.*.hf-transaction-*/

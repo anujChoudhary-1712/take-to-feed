@@ -1,0 +1,20 @@
+[
+  {
+    "media": "public/episode.m4a",
+    "transcript": "sources/episode.json",
+    "start_ms": 0,
+    "end_ms": 5897
+  },
+  {
+    "media": "public/assignment.m4a",
+    "transcript": "sources/assignment.json",
+    "start_ms": 0,
+    "end_ms": 3715
+  },
+  {
+    "media": "public/resolved.m4a",
+    "transcript": "sources/resolved.json",
+    "start_ms": 0,
+    "end_ms": 4969
+  }
+]
