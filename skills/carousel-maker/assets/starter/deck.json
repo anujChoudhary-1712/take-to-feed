@@ -1,0 +1,23 @@
+{
+  "label": "Your brand",
+  "background": "#F4F0E8",
+  "foreground": "#182B24",
+  "accent": "#155E49",
+  "slides": [
+    {
+      "title": "Name the reader's outcome",
+      "body": "Set up the promise in one sentence.",
+      "source": "Add the file, timestamp, or note supporting the promise."
+    },
+    {
+      "title": "Show the first action",
+      "body": "Explain what to do and why it matters.",
+      "source": "Add the evidence for this step. Add an image field if needed."
+    },
+    {
+      "title": "Close with the next step",
+      "body": "Give the reader a specific action to take.",
+      "source": "Tie this back to the cover and the evidence in the deck."
+    }
+  ]
+}
