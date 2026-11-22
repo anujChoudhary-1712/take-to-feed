@@ -1,48 +1,65 @@
 # Take to Feed
 
-Social media skills for Claude Code and Codex. Start from a product demo and turn it into posts that show the work.
+Social media skills for Claude Code and Codex. Turn a product demo, transcript, or idea into a carousel or short-form video plan, then use performance data to decide what to try next.
 
-## Skills
+## Install
 
-| Skill | What it produces |
-| --- | --- |
-| [Social Hooks](skills/social-hooks) | Cover, video, and text openings with evidence and a scoring rubric |
-| [Carousel Maker](skills/carousel-maker) | Editable slide copy, Instagram JPEGs, and a LinkedIn PDF |
-| [Short-Form Video](skills/short-form-video) | A recording script or timestamped edit handoff for vertical video |
-| [Content Experiments](skills/content-experiments) | An experiment plan, performance log, and next decision |
-
-Each skill has its own workflow guide and starter files. Install individual skills by folder name or use the whole set.
+Install all four skills with the Skills CLI.
 
 ```sh
 npx skills add anujChoudhary-1712/take-to-feed --skill '*'
 ```
 
-Copy the [brand brief template](examples/brand-brief.md) into your local content workspace and reuse it across posts. For a product demo, start with a hook, build a carousel or video handoff around the same proof, then log a test once the post is live.
+To install one, replace `'*'` with the skill name, such as `carousel-maker`. For a manual install, copy the entire skill folder into your agent's skills directory so its guides, assets, and scripts stay together.
 
-## Carousel Maker
+## Pick a skill
 
-Turn a demo transcript and screenshots into editable slide copy, Instagram JPEGs, and a LinkedIn document PDF. The deck records which demo moment supports each slide.
+| Skill | What to ask your agent | Guide and templates |
+| --- | --- | --- |
+| `social-hooks` | “Give me three openings for this demo. Show the first visual for each and score them against the payoff.” | [Workflow](skills/social-hooks/references/hook-workflow.md) · [Hook sheet](skills/social-hooks/assets/starter/hooks.md) |
+| `carousel-maker` | “Turn this transcript and these screenshots into a five-slide carousel. Export Instagram JPEGs and a LinkedIn PDF.” | [Setup](skills/carousel-maker/references/project-setup.md) · [Templates](skills/carousel-maker/assets/starter) · [Render and review](skills/carousel-maker/references/render-and-review.md) |
+| `short-form-video` | “Make a 30-second reel plan from this talking-head take and product recording. Include the cut points, captions, and cover copy.” | [Production guide](skills/short-form-video/references/production-guide.md) · [Script and edit templates](skills/short-form-video/assets/starter) |
+| `content-experiments` | “Plan a test of these two carousel covers. Use saves per reach at 72 hours and log what we should try next.” | [Experiment guide](skills/content-experiments/references/experiment-guide.md) · [Experiment log](skills/content-experiments/assets/starter/experiment.md) |
 
-Install the skill with `npx skills add anujChoudhary-1712/take-to-feed --skill carousel-maker`, or copy [the skill folder](skills/carousel-maker) into your agent's skills directory.
+Carousel Maker renders locally with Python and Pillow. Short-Form Video gives you a script or edit handoff for your existing editor or render project. Content Experiments uses the metrics you provide or can access through an authorized analytics tool.
 
-Try asking:
+## Set up a local content workspace
 
-> Turn this demo transcript and these screenshots into a five-slide carousel for podcast editors. Use the screenshots as proof and export Instagram images and a LinkedIn PDF.
+Copy the [brand brief template](examples/brand-brief.md) into your workspace. Keep shared voice and visual preferences there, and save each post's sources, drafts, and references with that post.
 
-## Start your own carousel
+```text
+social-content/
+├── brand.md
+├── carousels/
+│   └── podcast-review/
+│       ├── brief.md, references.md, deck.json, captions.md
+│       └── sources/, assets/, exports/
+├── reels/
+│   └── podcast-review/
+│       ├── script.md, edit-plan.md
+│       └── raw/, screen/, sources/, exports/
+└── experiments/
+    └── podcast-review-cover/
+        └── experiment.md
+```
 
-1. Follow the [local project setup](skills/carousel-maker/references/project-setup.md) to create a folder for each post. Keep original sources, reference notes, editable copy, and exports together.
-2. Copy the [starter templates](skills/carousel-maker/assets/starter) and fill in the brief and reference index before drafting.
-3. Choose a slide sequence from the [editorial guide](skills/carousel-maker/references/editorial-guide.md). Use its examples to decide when to show a screenshot, cite a source, or end with a next step.
-4. Follow the [render and review guide](skills/carousel-maker/references/render-and-review.md) to export and inspect your Instagram images and LinkedIn PDF.
+For a new demo, choose the moment that shows the outcome, draft hooks around it, and use the same evidence in the carousel or reel. Keep links, filenames, and timestamps in the draft so you can check claims while reviewing. Once the post is live, log the result in the experiment folder.
 
-## Reproduce the example
+## See a finished example
 
-The [demo transcript](examples/demo/transcript.md) describes a fictional product. The source screenshots are fictional fixtures generated by [make-fixtures.py](examples/demo/make-fixtures.py). Review the [editable deck](examples/demo/deck.json), [Instagram cover](examples/demo/exports/01.jpg), and [LinkedIn PDF](examples/demo/exports/carousel.pdf).
+The fictional Signal Desk demo follows a podcast edit note from its original timestamp to assignment and resolution. Start with the [transcript](examples/demo/transcript.md), then inspect the [editable deck](examples/demo/deck.json), [Instagram cover](examples/demo/exports/01.jpg), [LinkedIn PDF](examples/demo/exports/carousel.pdf), and [platform captions](examples/demo/captions.md).
+
+To reproduce the carousel from a checkout, run the following from the repository root.
 
 ```sh
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python examples/demo/make-fixtures.py
 .venv/bin/python skills/carousel-maker/scripts/render.py examples/demo/deck.json examples/demo/exports
 ```
+
+The [editorial guide](skills/carousel-maker/references/editorial-guide.md) shows how to adapt the slide sequence for a tutorial, case study, or research brief.
+
+## License
+
+[MIT](LICENSE)
