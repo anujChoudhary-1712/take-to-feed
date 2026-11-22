@@ -6,7 +6,7 @@ Social media skills for Claude Code and Codex. Start from a product demo and tur
 
 Turn a demo transcript and screenshots into editable slide copy, Instagram JPEGs, and a LinkedIn document PDF. The deck records which demo moment supports each slide.
 
-Install the skill with `npx skills add anuj-choudhary/take-to-feed --skill carousel-maker` once the repository is published, or copy [the skill folder](skills/carousel-maker) into your agent's skills directory.
+Install the skill with `npx skills add anujChoudhary-1712/take-to-feed --skill carousel-maker`, or copy [the skill folder](skills/carousel-maker) into your agent's skills directory.
 
 Try asking:
 
