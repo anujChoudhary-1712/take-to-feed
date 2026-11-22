@@ -2,6 +2,23 @@
 
 Social media skills for Claude Code and Codex. Start from a product demo and turn it into posts that show the work.
 
+## Skills
+
+| Skill | What it produces |
+| --- | --- |
+| [Social Hooks](skills/social-hooks) | Cover, video, and text openings with evidence and a scoring rubric |
+| [Carousel Maker](skills/carousel-maker) | Editable slide copy, Instagram JPEGs, and a LinkedIn PDF |
+| [Short-Form Video](skills/short-form-video) | A recording script or timestamped edit handoff for vertical video |
+| [Content Experiments](skills/content-experiments) | An experiment plan, performance log, and next decision |
+
+Each skill has its own workflow guide and starter files. Install individual skills by folder name or use the whole set.
+
+```sh
+npx skills add anujChoudhary-1712/take-to-feed --skill '*'
+```
+
+Copy the [brand brief template](examples/brand-brief.md) into your local content workspace and reuse it across posts. For a product demo, start with a hook, build a carousel or video handoff around the same proof, then log a test once the post is live.
+
 ## Carousel Maker
 
 Turn a demo transcript and screenshots into editable slide copy, Instagram JPEGs, and a LinkedIn document PDF. The deck records which demo moment supports each slide.
