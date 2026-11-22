@@ -10,6 +10,10 @@ Start with the line and visual that establish the subject. Add only the context 
 
 Use a separate source in/out for every clip. Record offsets from the original file, including the filename, and mark unknown ranges as pending. Keep source times separate from output times. Review candidate cuts against the footage so they land cleanly on speech and preserve context. If only a transcript is available, mark edit points for review before cutting.
 
+## Transcribe and render
+
+Follow the [editing stack guide](editing-stack.md) for Whisper timestamps, cut-aware caption timing, and the Remotion or HyperFrames render steps.
+
 ## Review the export
 
 Use the user's editor or existing render project when available. For a vertical master, start with a 9:16 canvas and preview it with the target platform's interface in mind. Keep key captions and UI details away from overlays. Check the first shot on mute, caption spelling and sync, intelligibility with music, and whether the screen proof matches the spoken line. Use music, footage, and fonts the creator can publish. Keep exports versioned when a previous cut is still in review.

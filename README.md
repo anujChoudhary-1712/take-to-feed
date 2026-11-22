@@ -1,6 +1,6 @@
 # Take to Feed
 
-Social media skills for Claude Code and Codex. Turn a product demo, transcript, or idea into a carousel or short-form video plan, then use performance data to decide what to try next.
+Social media skills for Claude Code and Codex. Turn a product demo, transcript, or idea into a carousel or short-form video, then use performance data to decide what to try next.
 
 ## Install
 
@@ -18,10 +18,10 @@ To install one, replace `'*'` with the skill name, such as `carousel-maker`. For
 | --- | --- | --- |
 | `social-hooks` | “Give me three openings for this demo. Show the first visual for each and score them against the payoff.” | [Workflow](skills/social-hooks/references/hook-workflow.md) · [Hook sheet](skills/social-hooks/assets/starter/hooks.md) |
 | `carousel-maker` | “Turn this transcript and these screenshots into a five-slide carousel. Export Instagram JPEGs and a LinkedIn PDF.” | [Setup](skills/carousel-maker/references/project-setup.md) · [Templates](skills/carousel-maker/assets/starter) · [Render and review](skills/carousel-maker/references/render-and-review.md) |
-| `short-form-video` | “Make a 30-second reel plan from this talking-head take and product recording. Include the cut points, captions, and cover copy.” | [Production guide](skills/short-form-video/references/production-guide.md) · [Script and edit templates](skills/short-form-video/assets/starter) |
+| `short-form-video` | “Make a 30-second reel plan from this talking-head take and product recording. Include the cut points, captions, and cover copy.” | [Production guide](skills/short-form-video/references/production-guide.md) · [Editing and rendering](skills/short-form-video/references/editing-stack.md) · [Script and edit templates](skills/short-form-video/assets/starter) |
 | `content-experiments` | “Plan a test of these two carousel covers. Use saves per reach at 72 hours and log what we should try next.” | [Experiment guide](skills/content-experiments/references/experiment-guide.md) · [Experiment log](skills/content-experiments/assets/starter/experiment.md) |
 
-Carousel Maker renders locally with Python and Pillow. Short-Form Video gives you a script or edit handoff for your existing editor or render project. Content Experiments uses the metrics you provide or can access through an authorized analytics tool.
+Carousel Maker renders locally with Python and Pillow. Short-Form Video uses Whisper for speech timing and Remotion or HyperFrames for rendering in a compatible project. Content Experiments uses the metrics you provide or can access through an authorized analytics tool.
 
 ## Set up a local content workspace
 
@@ -36,7 +36,7 @@ social-content/
 │       └── sources/, assets/, exports/
 ├── reels/
 │   └── podcast-review/
-│       ├── script.md, edit-plan.md
+│       ├── script.md, edit-plan.md, cuts.json
 │       └── raw/, screen/, sources/, exports/
 └── experiments/
     └── podcast-review-cover/

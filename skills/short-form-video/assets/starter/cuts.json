@@ -1,0 +1,14 @@
+[
+  {
+    "media": "raw/take-01.mp4",
+    "transcript": "sources/take-01.json",
+    "start_ms": 1200,
+    "end_ms": 5400
+  },
+  {
+    "media": "raw/take-01.mp4",
+    "transcript": "sources/take-01.json",
+    "start_ms": 7200,
+    "end_ms": 11400
+  }
+]
